@@ -6,14 +6,11 @@
   "scripts": {
     "dev": "vite",
     "server": "node server/server.mjs",
-    "server:spring": "mvn spring-boot:run",
-    "dev:full": "concurrently \"npm run server:spring\" \"npm run dev\"",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "@types/leaflet": "^1.9.22",
-    "@vitejs/plugin-react": "latest",
     "concurrently": "latest",
     "cors": "latest",
     "express": "latest",
@@ -21,12 +18,13 @@
     "lucide-react": "latest",
     "multer": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "vite": "latest"
+    "react-dom": "latest"
   },
   "devDependencies": {
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.5",
-    "typescript": "latest"
+    "@vitejs/plugin-react": "latest",
+    "typescript": "latest",
+    "vite": "latest"
   }
 }
